@@ -15,6 +15,8 @@ form.addEventListener("submit", (e) => {
       phoneNumber,
     headers: {
       "X-User-API-Key": "UAKc82d972c-8fb1-4b2e-8927-c0a595365b33",
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
     },
     data: data,
   };

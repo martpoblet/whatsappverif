@@ -16,7 +16,6 @@ form.addEventListener("submit", (e) => {
     headers: {
       "X-User-API-Key": "UAKc82d972c-8fb1-4b2e-8927-c0a595365b33",
       "Access-Control-Allow-Methods": "GET, POST, OPTION",
-      "Access-Control-Allow-Credentials": true,
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "application/json",
     },

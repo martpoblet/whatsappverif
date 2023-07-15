@@ -2,24 +2,24 @@
 <html lang="es" content="charset=UTF-8">
   <head>
     <title>Verificación de número de WhatsApp</title>
-    <link rel="stylesheet" type="text/css" href="/src/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
     <div class="container">
       <h2>Verificación de número de WhatsApp</h2>
 
-      <div class="form-group">
+      <form class="form-group" id="form">
         <label for="phone-number">Número de teléfono:</label>
         <input
           type="text"
           id="phone-number"
           placeholder="Ingrese el número de teléfono"
         />
-      </div>
-      <button id="verify-btn">Verificar</button>
+        <button type="submit">Verificar</button>
+      </form>
       <div class="result" id="result"></div>
     </div>
-
-    <script type="module" src="/src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

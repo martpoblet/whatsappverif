@@ -1,17 +1,22 @@
-import axios from "axios";
+const form = document.getElementById("form");
+console.log("load");
 
-document.getElementById("verify-btn").addEventListener("click", function () {
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
   var phoneNumber = document.getElementById("phone-number").value;
   console.log(phoneNumber);
+  let data = "";
 
   var config = {
+    maxBodyLength: Infinity,
     method: "get",
     url:
       "https://api.p.2chat.io/open/whatsapp/check-number/+5491126948581/+54" +
       phoneNumber,
     headers: {
-      "X-User-API-Key": "UAKc82d972c-8fb1-4b2e-8927-c0a595365b33"
-    }
+      "X-User-API-Key": "UAKc82d972c-8fb1-4b2e-8927-c0a595365b33",
+    },
+    data: data,
   };
 
   axios(config)
